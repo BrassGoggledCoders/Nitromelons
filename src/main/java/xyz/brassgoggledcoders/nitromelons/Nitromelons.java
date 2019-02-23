@@ -47,7 +47,7 @@ public class Nitromelons {
 
 	@SubscribeEvent
 	public static void registerItems(RegistryEvent.Register<Item> event) {
-		nitroMelonSeed = new ItemNitromelonSeeds(nitroMelonStem, Blocks.FARMLAND);
+		nitroMelonSeed = new ItemNitromelonSeeds(nitroMelonStem, Blocks.MAGMA);
 		event.getRegistry().register(nitroMelonSeed);
 		event.getRegistry().register(new ItemBlock(nitroMelon).setRegistryName(nitroMelon.getRegistryName()));
 		// Why is registering item models the most complex part of a small mod now
