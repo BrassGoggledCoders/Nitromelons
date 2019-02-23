@@ -12,7 +12,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
     }
 }
 
@@ -53,8 +53,6 @@ minecraft {
 }
 
 dependencies {
-     compile "com.teamacronymcoders.base:base:${minecraft_version}-${base_version}-Snapshot.+:deobf"
-    deobfCompile "mezz.jei:jei_${minecraft_version}:${jei_version}"
 }
 
 compileJava {
