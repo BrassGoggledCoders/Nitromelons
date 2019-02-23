@@ -3,12 +3,19 @@
     "defaults": {
     "textures": {
       "stem": "nitromelons:blocks/melon_stem_disconnected",
-      "upperstem": "nitromelons:blocks/melon_stem_disconnected"
+      "upperstem": "nitromelons:blocks/melon_stem_connected"
     },
     "uvlock": true,
     "transform": "forge:default-block"
      },
     "variants": {
+        "facing": {
+        "up": {},
+        "west": { "model": "melon_stem_fruit" },
+        "east": { "model": "melon_stem_fruit", "y": 180 },
+        "north": { "model": "melon_stem_fruit", "y": 90 },
+        "south": { "model": "melon_stem_fruit", "y": 270 }
+        },
         "age": {
         "0": { "model": "melon_stem_growth0" },
         "1": { "model": "melon_stem_growth1" },
@@ -17,14 +24,7 @@
         "4": { "model": "melon_stem_growth4" },
         "5": { "model": "melon_stem_growth5" },
         "6": { "model": "melon_stem_growth6" },
-        "7": { "model": "melon_stem_growth7" }
-        },
-        "facing": {
-        "up": {},
-        "west": { "model": "melon_stem_fruit" },
-        "east": { "model": "melon_stem_fruit", "y": 180 },
-        "north": { "model": "melon_stem_fruit", "y": 90 },
-        "south": { "model": "melon_stem_fruit", "y": 270 }
+        "7": { "model": "melon_stem_fruit" }
         }
     }
 }
